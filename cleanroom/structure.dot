@@ -1,0 +1,21 @@
+digraph G {
+    // inventory
+    {Play_count Level Chips Multiplyer} -> Poker_hands
+    Card -> Deck
+    {Hand_Size Hand_count} -> Hand
+    Discards
+    Money
+    Vouchers
+    Consumables
+    Jokers
+    // Cardstructure
+    {Rank Suit Edition Enhancement Seal Uuid} -> Card
+
+    // In round
+    Deck -> Play_Deck
+    Play_Deck -> Hand
+    Ante -> Round -> Target_Score
+    Current_Score -> Target_Score
+    Hand -> Play_Area -> Scoring -> Round_Score -> Current_Score
+    Jokers -> Scoring
+}
