@@ -1,6 +1,6 @@
 digraph G {
     // inventory
-    {Play_count Level Chips Multiplyer} -> Poker_hands
+    {Play_count Level Chips Multiplier} -> Poker_hands
     Card -> Deck
     {Hand_Size Hand_count} -> Hand
     Discards
@@ -18,4 +18,5 @@ digraph G {
     Current_Score -> Target_Score
     Hand -> Play_Area -> Scoring -> Round_Score -> Current_Score
     Jokers -> Scoring
+    Poker_hands -> Scoring
 }

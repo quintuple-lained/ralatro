@@ -76,7 +76,6 @@
             check-json.enable = true;
             check-toml.enable = true;
             check-merge-conflicts.enable = true;
-            end-of-file-fixer.enable = true;
 
             # Custom hook for cargo check
             cargo-check = {

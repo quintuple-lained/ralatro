@@ -1,0 +1,325 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1333pt" height="692pt" viewBox="0.00 0.00 1332.56 692.00">
+<g id="graph0" class="graph" transform="translate(4,688) scale(1)" data-name="G">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-688 1328.56,-688 1328.56,4 -4,4"/>
+<!-- Play_count -->
+<g id="node1" class="node" pointer-events="visible" data-name="Play_count">
+
+<ellipse fill="none" stroke="black" cx="54.49" cy="-378" rx="54.48" ry="18"/>
+<text text-anchor="middle" x="54.49" y="-373.8" font-family="Times,serif" font-size="14.00">Play_count</text>
+</g>
+<!-- Poker_hands -->
+<g id="node5" class="node" pointer-events="visible" data-name="Poker_hands">
+
+<ellipse fill="none" stroke="black" cx="237.49" cy="-306" rx="60.85" ry="18"/>
+<text text-anchor="middle" x="237.49" y="-301.8" font-family="Times,serif" font-size="14.00">Poker_hands</text>
+</g>
+<!-- Play_count&#45;&gt;Poker_hands -->
+<g id="edge1" class="edge" data-name="Play_count-&gt;Poker_hands">
+
+<path fill="none" stroke="black" d="M88.91,-363.83C117.75,-352.8 159.18,-336.96 190.96,-324.8"/>
+<polygon fill="black" stroke="black" points="191.84,-328.21 199.93,-321.37 189.34,-321.67 191.84,-328.21"/>
+</g>
+<!-- Level -->
+<g id="node2" class="node" pointer-events="visible" data-name="Level">
+
+<ellipse fill="none" stroke="black" cx="160.49" cy="-378" rx="33.04" ry="18"/>
+<text text-anchor="middle" x="160.49" y="-373.8" font-family="Times,serif" font-size="14.00">Level</text>
+</g>
+<!-- Level&#45;&gt;Poker_hands -->
+<g id="edge2" class="edge" data-name="Level-&gt;Poker_hands">
+
+<path fill="none" stroke="black" d="M176.82,-362.15C186.74,-353.14 199.64,-341.41 210.99,-331.09"/>
+<polygon fill="black" stroke="black" points="213.13,-333.87 218.18,-324.56 208.42,-328.69 213.13,-333.87"/>
+</g>
+<!-- Chips -->
+<g id="node3" class="node" pointer-events="visible" data-name="Chips">
+
+<ellipse fill="none" stroke="black" cx="245.49" cy="-378" rx="33.65" ry="18"/>
+<text text-anchor="middle" x="245.49" y="-373.8" font-family="Times,serif" font-size="14.00">Chips</text>
+</g>
+<!-- Chips&#45;&gt;Poker_hands -->
+<g id="edge3" class="edge" data-name="Chips-&gt;Poker_hands">
+
+<path fill="none" stroke="black" d="M243.51,-359.7C242.68,-352.41 241.69,-343.73 240.75,-335.54"/>
+<polygon fill="black" stroke="black" points="244.23,-335.15 239.61,-325.61 237.27,-335.94 244.23,-335.15"/>
+</g>
+<!-- Multiplyer -->
+<g id="node4" class="node" pointer-events="visible" data-name="Multiplyer">
+
+<ellipse fill="none" stroke="black" cx="349.49" cy="-378" rx="52.19" ry="18"/>
+<text text-anchor="middle" x="349.49" y="-373.8" font-family="Times,serif" font-size="14.00">Multiplyer</text>
+</g>
+<!-- Multiplyer&#45;&gt;Poker_hands -->
+<g id="edge4" class="edge" data-name="Multiplyer-&gt;Poker_hands">
+
+<path fill="none" stroke="black" d="M324.91,-361.64C309.51,-352.02 289.44,-339.47 272.4,-328.82"/>
+<polygon fill="black" stroke="black" points="274.4,-325.95 264.07,-323.61 270.69,-331.88 274.4,-325.95"/>
+</g>
+<!-- Card -->
+<g id="node6" class="node" pointer-events="visible" data-name="Card">
+
+<ellipse fill="none" stroke="black" cx="588.49" cy="-594" rx="29.62" ry="18"/>
+<text text-anchor="middle" x="588.49" y="-589.8" font-family="Times,serif" font-size="14.00">Card</text>
+</g>
+<!-- Deck -->
+<g id="node7" class="node" pointer-events="visible" data-name="Deck">
+
+<ellipse fill="none" stroke="black" cx="588.49" cy="-522" rx="31.32" ry="18"/>
+<text text-anchor="middle" x="588.49" y="-517.8" font-family="Times,serif" font-size="14.00">Deck</text>
+</g><g id="edge24" class="edge" data-name="Poker_hands-&gt;Scoring" data-comment="Deck">
+
+<path fill="none" stroke="black" d="M263.3,-289.29C279.95,-279.16 301.75,-265.88 319.64,-255"/>
+<polygon fill="black" stroke="black" points="321.1,-258.21 327.82,-250.02 317.46,-252.23 321.1,-258.21"/>
+</g>
+<!-- Card&#45;&gt;Deck -->
+<g id="edge5" class="edge" data-name="Card-&gt;Deck">
+
+<path fill="none" stroke="black" d="M588.49,-575.7C588.49,-568.41 588.49,-559.73 588.49,-551.54"/>
+<polygon fill="black" stroke="black" points="591.99,-551.62 588.49,-541.62 584.99,-551.62 591.99,-551.62"/>
+</g>
+<!-- Play_Deck -->
+<g id="node22" class="node" pointer-events="visible" data-name="Play_Deck">
+
+<ellipse fill="none" stroke="black" cx="588.49" cy="-450" rx="53.32" ry="18"/>
+<text text-anchor="middle" x="588.49" y="-445.8" font-family="Times,serif" font-size="14.00">Play_Deck</text>
+</g>
+<!-- Deck&#45;&gt;Play_Deck -->
+<g id="edge14" class="edge" data-name="Deck-&gt;Play_Deck">
+
+<path fill="none" stroke="black" d="M588.49,-503.7C588.49,-496.41 588.49,-487.73 588.49,-479.54"/>
+<polygon fill="black" stroke="black" points="591.99,-479.62 588.49,-469.62 584.99,-479.62 591.99,-479.62"/>
+</g>
+<!-- Hand_Size -->
+<g id="node8" class="node" pointer-events="visible" data-name="Hand_Size">
+
+<ellipse fill="none" stroke="black" cx="328.49" cy="-450" rx="53.32" ry="18"/>
+<text text-anchor="middle" x="328.49" y="-445.8" font-family="Times,serif" font-size="14.00">Hand_Size</text>
+</g>
+<!-- Hand -->
+<g id="node10" class="node" pointer-events="visible" data-name="Hand">
+
+<ellipse fill="none" stroke="black" cx="458.49" cy="-378" rx="31.91" ry="18"/>
+<text text-anchor="middle" x="458.49" y="-373.8" font-family="Times,serif" font-size="14.00">Hand</text>
+</g>
+<!-- Hand_Size&#45;&gt;Hand -->
+<g id="edge6" class="edge" data-name="Hand_Size-&gt;Hand">
+
+<path fill="none" stroke="black" d="M356.06,-434.15C376.55,-423.12 404.58,-408.03 426.14,-396.42"/>
+<polygon fill="black" stroke="black" points="427.66,-399.57 434.81,-391.75 424.34,-393.41 427.66,-399.57"/>
+</g>
+<!-- Hand_count -->
+<g id="node9" class="node" pointer-events="visible" data-name="Hand_count">
+
+<ellipse fill="none" stroke="black" cx="458.49" cy="-450" rx="58.47" ry="18"/>
+<text text-anchor="middle" x="458.49" y="-445.8" font-family="Times,serif" font-size="14.00">Hand_count</text>
+</g>
+<!-- Hand_count&#45;&gt;Hand -->
+<g id="edge7" class="edge" data-name="Hand_count-&gt;Hand">
+
+<path fill="none" stroke="black" d="M458.49,-431.7C458.49,-424.41 458.49,-415.73 458.49,-407.54"/>
+<polygon fill="black" stroke="black" points="461.99,-407.62 458.49,-397.62 454.99,-407.62 461.99,-407.62"/>
+</g>
+<!-- Play_Area -->
+<g id="node27" class="node" pointer-events="visible" data-name="Play_Area">
+
+<ellipse fill="none" stroke="black" cx="458.49" cy="-306" rx="51.59" ry="18"/>
+<text text-anchor="middle" x="458.49" y="-301.8" font-family="Times,serif" font-size="14.00">Play_Area</text>
+</g>
+<!-- Hand&#45;&gt;Play_Area -->
+<g id="edge19" class="edge" data-name="Hand-&gt;Play_Area">
+
+<path fill="none" stroke="black" d="M458.49,-359.7C458.49,-352.41 458.49,-343.73 458.49,-335.54"/>
+<polygon fill="black" stroke="black" points="461.99,-335.62 458.49,-325.62 454.99,-335.62 461.99,-335.62"/>
+</g>
+<!-- Discards -->
+<g id="node11" class="node" pointer-events="visible" data-name="Discards">
+
+<ellipse fill="none" stroke="black" cx="927.49" cy="-666" rx="44.65" ry="18"/>
+<text text-anchor="middle" x="927.49" y="-661.8" font-family="Times,serif" font-size="14.00">Discards</text>
+</g>
+<!-- Money -->
+<g id="node12" class="node" pointer-events="visible" data-name="Money">
+
+<ellipse fill="none" stroke="black" cx="1028.49" cy="-666" rx="38.29" ry="18"/>
+<text text-anchor="middle" x="1028.49" y="-661.8" font-family="Times,serif" font-size="14.00">Money</text>
+</g>
+<!-- Vouchers -->
+<g id="node13" class="node" pointer-events="visible" data-name="Vouchers">
+
+<ellipse fill="none" stroke="black" cx="1132.49" cy="-666" rx="48.08" ry="18"/>
+<text text-anchor="middle" x="1132.49" y="-661.8" font-family="Times,serif" font-size="14.00">Vouchers</text>
+</g>
+<!-- Consumables -->
+<g id="node14" class="node" pointer-events="visible" data-name="Consumables">
+
+<ellipse fill="none" stroke="black" cx="1261.49" cy="-666" rx="63.15" ry="18"/>
+<text text-anchor="middle" x="1261.49" y="-661.8" font-family="Times,serif" font-size="14.00">Consumables</text>
+</g>
+<!-- Jokers -->
+<g id="node15" class="node" pointer-events="visible" data-name="Jokers">
+
+<ellipse fill="none" stroke="black" cx="352.49" cy="-306" rx="35.92" ry="18"/>
+<text text-anchor="middle" x="352.49" y="-301.8" font-family="Times,serif" font-size="14.00">Jokers</text>
+</g>
+<!-- Scoring -->
+<g id="node28" class="node" pointer-events="visible" data-name="Scoring">
+
+<ellipse fill="none" stroke="black" cx="352.49" cy="-234" rx="41.16" ry="18"/>
+<text text-anchor="middle" x="352.49" y="-229.8" font-family="Times,serif" font-size="14.00">Scoring</text>
+</g>
+<!-- Jokers&#45;&gt;Scoring -->
+<g id="edge23" class="edge" data-name="Jokers-&gt;Scoring">
+
+<path fill="none" stroke="black" d="M352.49,-287.7C352.49,-280.41 352.49,-271.73 352.49,-263.54"/>
+<polygon fill="black" stroke="black" points="355.99,-263.62 352.49,-253.62 348.99,-263.62 355.99,-263.62"/>
+</g>
+<!-- Rank -->
+<g id="node16" class="node" pointer-events="visible" data-name="Rank">
+
+<ellipse fill="none" stroke="black" cx="368.49" cy="-666" rx="31.34" ry="18"/>
+<text text-anchor="middle" x="368.49" y="-661.8" font-family="Times,serif" font-size="14.00">Rank</text>
+</g>
+<!-- Rank&#45;&gt;Card -->
+<g id="edge8" class="edge" data-name="Rank-&gt;Card">
+
+<path fill="none" stroke="black" d="M392.85,-654.12C397.97,-651.98 403.37,-649.83 408.49,-648 456.85,-630.67 513.92,-614.58 550.63,-604.78"/>
+<polygon fill="black" stroke="black" points="551.11,-608.27 559.88,-602.33 549.31,-601.51 551.11,-608.27"/>
+</g>
+<!-- Suit -->
+<g id="node17" class="node" pointer-events="visible" data-name="Suit">
+
+<ellipse fill="none" stroke="black" cx="444.49" cy="-666" rx="27" ry="18"/>
+<text text-anchor="middle" x="444.49" y="-661.8" font-family="Times,serif" font-size="14.00">Suit</text>
+</g>
+<!-- Suit&#45;&gt;Card -->
+<g id="edge9" class="edge" data-name="Suit-&gt;Card">
+
+<path fill="none" stroke="black" d="M466.05,-654.52C489.73,-643.01 528.06,-624.37 555.53,-611.02"/>
+<polygon fill="black" stroke="black" points="557.01,-614.2 564.47,-606.68 553.95,-607.9 557.01,-614.2"/>
+</g>
+<!-- Edition -->
+<g id="node18" class="node" pointer-events="visible" data-name="Edition">
+
+<ellipse fill="none" stroke="black" cx="528.49" cy="-666" rx="39.44" ry="18"/>
+<text text-anchor="middle" x="528.49" y="-661.8" font-family="Times,serif" font-size="14.00">Edition</text>
+</g>
+<!-- Edition&#45;&gt;Card -->
+<g id="edge10" class="edge" data-name="Edition-&gt;Card">
+
+<path fill="none" stroke="black" d="M542.4,-648.76C550.04,-639.86 559.64,-628.65 568.11,-618.78"/>
+<polygon fill="black" stroke="black" points="570.63,-621.21 574.48,-611.34 565.32,-616.65 570.63,-621.21"/>
+</g>
+<!-- Enhancement -->
+<g id="node19" class="node" pointer-events="visible" data-name="Enhancement">
+
+<ellipse fill="none" stroke="black" cx="649.49" cy="-666" rx="63.68" ry="18"/>
+<text text-anchor="middle" x="649.49" y="-661.8" font-family="Times,serif" font-size="14.00">Enhancement</text>
+</g>
+<!-- Enhancement&#45;&gt;Card -->
+<g id="edge11" class="edge" data-name="Enhancement-&gt;Card">
+
+<path fill="none" stroke="black" d="M634.72,-648.05C627.13,-639.35 617.75,-628.59 609.43,-619.03"/>
+<polygon fill="black" stroke="black" points="612.07,-616.74 602.86,-611.5 606.8,-621.34 612.07,-616.74"/>
+</g>
+<!-- Seal -->
+<g id="node20" class="node" pointer-events="visible" data-name="Seal">
+
+<ellipse fill="none" stroke="black" cx="758.49" cy="-666" rx="27.83" ry="18"/>
+<text text-anchor="middle" x="758.49" y="-661.8" font-family="Times,serif" font-size="14.00">Seal</text>
+</g>
+<!-- Seal&#45;&gt;Card -->
+<g id="edge12" class="edge" data-name="Seal-&gt;Card">
+
+<path fill="none" stroke="black" d="M736.51,-654.34C731.9,-652.19 727.05,-649.98 722.49,-648 689.4,-633.66 651.09,-618.67 623.93,-608.3"/>
+<polygon fill="black" stroke="black" points="625.39,-605.11 614.8,-604.83 622.9,-611.66 625.39,-605.11"/>
+</g>
+<!-- Uuid -->
+<g id="node21" class="node" pointer-events="visible" data-name="Uuid">
+
+<ellipse fill="none" stroke="black" cx="834.49" cy="-666" rx="30.2" ry="18"/>
+<text text-anchor="middle" x="834.49" y="-661.8" font-family="Times,serif" font-size="14.00">Uuid</text>
+</g>
+<!-- Uuid&#45;&gt;Card -->
+<g id="edge13" class="edge" data-name="Uuid-&gt;Card">
+
+<path fill="none" stroke="black" d="M811.22,-654.13C806.1,-651.95 800.66,-649.78 795.49,-648 738.08,-628.28 669.5,-612.12 627.48,-603.02"/>
+<polygon fill="black" stroke="black" points="628.35,-599.63 617.84,-600.96 626.89,-606.47 628.35,-599.63"/>
+</g>
+<!-- Play_Deck&#45;&gt;Hand -->
+<g id="edge15" class="edge" data-name="Play_Deck-&gt;Hand">
+
+<path fill="none" stroke="black" d="M560.92,-434.15C540.42,-423.12 512.39,-408.03 490.84,-396.42"/>
+<polygon fill="black" stroke="black" points="492.63,-393.41 482.17,-391.75 489.31,-399.57 492.63,-393.41"/>
+</g>
+<!-- Ante -->
+<g id="node23" class="node" pointer-events="visible" data-name="Ante">
+
+<ellipse fill="none" stroke="black" cx="474.49" cy="-162" rx="29.62" ry="18"/>
+<text text-anchor="middle" x="474.49" y="-157.8" font-family="Times,serif" font-size="14.00">Ante</text>
+</g>
+<!-- Round -->
+<g id="node24" class="node" pointer-events="visible" data-name="Round">
+
+<ellipse fill="none" stroke="black" cx="474.49" cy="-90" rx="36.58" ry="18"/>
+<text text-anchor="middle" x="474.49" y="-85.8" font-family="Times,serif" font-size="14.00">Round</text>
+</g>
+<!-- Ante&#45;&gt;Round -->
+<g id="edge16" class="edge" data-name="Ante-&gt;Round">
+
+<path fill="none" stroke="black" d="M474.49,-143.7C474.49,-136.41 474.49,-127.73 474.49,-119.54"/>
+<polygon fill="black" stroke="black" points="477.99,-119.62 474.49,-109.62 470.99,-119.62 477.99,-119.62"/>
+</g>
+<!-- Target_Score -->
+<g id="node25" class="node" pointer-events="visible" data-name="Target_Score">
+
+<ellipse fill="none" stroke="black" cx="413.49" cy="-18" rx="63.1" ry="18"/>
+<text text-anchor="middle" x="413.49" y="-13.8" font-family="Times,serif" font-size="14.00">Target_Score</text>
+</g>
+<!-- Round&#45;&gt;Target_Score -->
+<g id="edge17" class="edge" data-name="Round-&gt;Target_Score">
+
+<path fill="none" stroke="black" d="M460.65,-73.12C453.22,-64.59 443.89,-53.89 435.49,-44.25"/>
+<polygon fill="black" stroke="black" points="438.33,-42.18 429.12,-36.94 433.05,-46.78 438.33,-42.18"/>
+</g>
+<!-- Current_Score -->
+<g id="node26" class="node" pointer-events="visible" data-name="Current_Score">
+
+<ellipse fill="none" stroke="black" cx="352.49" cy="-90" rx="67.2" ry="18"/>
+<text text-anchor="middle" x="352.49" y="-85.8" font-family="Times,serif" font-size="14.00">Current_Score</text>
+</g>
+<!-- Current_Score&#45;&gt;Target_Score -->
+<g id="edge18" class="edge" data-name="Current_Score-&gt;Target_Score">
+
+<path fill="none" stroke="black" d="M367.25,-72.05C374.52,-63.71 383.43,-53.49 391.48,-44.25"/>
+<polygon fill="black" stroke="black" points="393.93,-46.77 397.86,-36.93 388.65,-42.17 393.93,-46.77"/>
+</g>
+<!-- Play_Area&#45;&gt;Scoring -->
+<g id="edge20" class="edge" data-name="Play_Area-&gt;Scoring">
+
+<path fill="none" stroke="black" d="M435.23,-289.64C420.15,-279.68 400.32,-266.59 383.85,-255.71"/>
+<polygon fill="black" stroke="black" points="386.14,-253.03 375.87,-250.44 382.29,-258.87 386.14,-253.03"/>
+</g>
+<!-- Round_Score -->
+<g id="node29" class="node" pointer-events="visible" data-name="Round_Score">
+
+<ellipse fill="none" stroke="black" cx="352.49" cy="-162" rx="63.72" ry="18"/>
+<text text-anchor="middle" x="352.49" y="-157.8" font-family="Times,serif" font-size="14.00">Round_Score</text>
+</g>
+<!-- Scoring&#45;&gt;Round_Score -->
+<!-- Scoring&#45;&gt;Round_Score -->
+<g id="edge21" class="edge" data-name="Scoring-&gt;Round_Score">
+
+<path fill="none" stroke="black" d="M352.49,-215.7C352.49,-208.41 352.49,-199.73 352.49,-191.54"/>
+<polygon fill="black" stroke="black" points="355.99,-191.62 352.49,-181.62 348.99,-191.62 355.99,-191.62"/>
+</g>
+<!-- Round_Score&#45;&gt;Current_Score -->
+
+<g id="edge22" class="edge" data-name="Round_Score-&gt;Current_Score">
+
+<path fill="none" stroke="black" d="M352.49,-143.7C352.49,-136.41 352.49,-127.73 352.49,-119.54"/>
+<polygon fill="black" stroke="black" points="355.99,-119.62 352.49,-109.62 348.99,-119.62 355.99,-119.62"/>
+</g>
+</g>
+</svg>
