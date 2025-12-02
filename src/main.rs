@@ -1,154 +1,10 @@
-use rand::{Rng, rng, seq::SliceRandom};
 use uuid::Uuid;
 
-#[derive(Clone, Debug)]
-enum CardEdition {
-    Base,
-    Foil,
-    Holographic,
-    Polychrome,
-}
+mod card;
+mod deck;
 
-#[derive(Clone, Debug)]
-enum CardEnhancement {
-    None,
-    Bonus,
-    Mult,
-    Wild,
-    Glass,
-    Steel,
-    Stone,
-    Gold,
-    Lucky,
-}
-
-#[derive(Clone, Debug)]
-enum CardSeal {
-    None,
-    Red,
-    Blue,
-    Gold,
-    Purple,
-}
-
-#[derive(Clone, Copy, Debug, PartialEq)]
-enum Suit {
-    Clubs,
-    Diamonds,
-    Hearts,
-    Spades,
-}
-
-impl Suit {
-    fn all() -> [Suit; 4] {
-        [Suit::Clubs, Suit::Diamonds, Suit::Hearts, Suit::Spades]
-    }
-}
-
-#[derive(Clone, Copy, Debug, PartialEq, Eq, PartialOrd, Ord)]
-enum Rank {
-    Ace = 1,
-    Two = 2,
-    Three = 3,
-    Four = 4,
-    Five = 5,
-    Six = 6,
-    Seven = 7,
-    Eight = 8,
-    Nine = 9,
-    Ten = 10,
-    Jack = 11,
-    Queen = 12,
-    King = 13,
-}
-
-impl Rank {
-    fn all() -> [Rank; 13] {
-        [
-            Rank::Ace,
-            Rank::Two,
-            Rank::Three,
-            Rank::Four,
-            Rank::Five,
-            Rank::Six,
-            Rank::Seven,
-            Rank::Eight,
-            Rank::Nine,
-            Rank::Ten,
-            Rank::Jack,
-            Rank::Queen,
-            Rank::King,
-        ]
-    }
-}
-
-#[derive(Clone, Debug)]
-struct Card {
-    rank: Rank,
-    suit: Suit,
-    edition: CardEdition,
-    enhancement: CardEnhancement,
-    seal: CardSeal,
-    uuid: Uuid,
-}
-
-struct Deck {
-    cards: Vec<Card>,
-}
-
-impl Deck {
-    fn new_standard() -> Self {
-        Self {
-            cards: create_standard_deck(),
-        }
-    }
-    fn shuffle(&mut self) {
-        self.cards.shuffle(&mut rng());
-    }
-
-    fn add_card(&mut self, card: Card) {
-        self.cards.push(card)
-    }
-
-    fn take_top(&mut self, amount: usize) -> Vec<Card> {
-        self.cards
-            .split_off(self.cards.len().saturating_sub(amount))
-    }
-
-    fn take_specific(&mut self, uuid: &Uuid) -> Option<Card> {
-        self.cards
-            .iter()
-            .position(|c| &c.uuid == uuid)
-            .map(|idx| self.cards.remove(idx))
-    }
-
-    fn take_random(&mut self) -> Option<Card> {
-        if self.cards.is_empty() {
-            None
-        } else {
-            let idx = rng().random_range(0..self.cards.len());
-            Some(self.cards.remove(idx))
-        }
-    }
-}
-
-fn create_standard_deck() -> Vec<Card> {
-    let mut deck = Vec::with_capacity(52);
-
-    for suit in Suit::all() {
-        for rank in Rank::all() {
-            deck.push(Card {
-                rank,
-                suit,
-                edition: CardEdition::Base,
-                enhancement: CardEnhancement::None,
-                seal: CardSeal::None,
-                uuid: Uuid::now_v7(),
-            })
-        }
-    }
-    deck
-}
+use card::{Card, CardEdition, CardEnhancement, CardSeal, Rank, Suit};
+use deck::Deck;
 
 fn main() {
     println!("=== Creating a Standard Deck ===");
@@ -205,6 +61,7 @@ fn main() {
         edition: CardEdition::Foil,
         enhancement: CardEnhancement::Gold,
         seal: CardSeal::Red,
+        misc_bonus: 10,
         uuid: Uuid::now_v7(),
     };
     println!(
@@ -223,7 +80,8 @@ fn main() {
             last_card.suit,
             last_card.enhancement,
             last_card.seal
-        )
+        );
+        println!("  it is worth {:?} chips", last_card.chip_value())
     }
 
     println!("\n=== Final deck size: {} cards ===", deck.cards.len());
